@@ -61,7 +61,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Handle button clicks."""
     query = update.callback_query
     await query.answer()
-    await query.edit_message_text(text=" Send me your token address.")
+    await query.edit_message_text(text=" Send me token address.")
     
     # Store the chain selection in the context for future use
     context.user_data['chain'] = query.data
